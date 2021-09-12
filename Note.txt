@@ -42,11 +42,12 @@ link repo: https://github.com/dpnguyen53/bc10angularrouting
 ======= Buoi 4 =======
     - Routing:
         + Routing Component
-        + Service
-        + Angular Material
-        + Ant
+    - Service
+    - Angular Material
+    - Ant
 
 
 ======= Buoi 5 =======
     - Routing:
-        + Routing Module
+        + Routing Module (Lazy)
+    - Service
