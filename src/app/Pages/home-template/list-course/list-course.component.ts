@@ -17,7 +17,6 @@ export class ListCourseComponent implements OnInit {
 
   getCourses(){
     this.data.getListCourse().subscribe((result: any) => {
-      console.log(result);
       this.listCourse = result;
     })
   }

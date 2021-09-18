@@ -1,7 +1,19 @@
 <div class="card">
-    <img class="card-img-top" [src]="course.hinhAnh" alt="">
-    <div class="card-body">
-        <h4 class="card-title">{{course.tenKhoaHoc}}</h4>
-        <a class="btn btn-success" href="#">Detail</a>
-    </div>
+  <img class="card-img-top" [src]="course.hinhAnh" alt="" />
+  <div class="card-body">
+    <h4 class="card-title">{{ course.tenKhoaHoc }}</h4>
+
+    <!-- Truyen 1 param -->
+    <!-- <a class="btn btn-success" routerLink="/detail/{{ course.maKhoaHoc }}"
+      >Detail</a
+    > -->
+
+    <!-- Truyen nhieu params -->
+    <a
+      class="btn btn-success"
+      routerLink="/detail/{{ course.maKhoaHoc }}"
+      [queryParams]="{ tenKhoaHoc: course.tenKhoaHoc, biDanh: course.biDanh }"
+      >Detail</a
+    >
+  </div>
 </div>
