@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div>{{ info | uppercase }}</div>
+<div>{{ info | lowercase }}</div>
+<div>{{ people | json }}</div>
+<div>{{ array | slice: 1:5 }}</div>
+<div>{{ number | percent }}</div>
+
+<input type="text" [(ngModel)]="inputValue" />
+{{ inputValue }}
+<app-child-home [data]="inputValue"></app-child-home>

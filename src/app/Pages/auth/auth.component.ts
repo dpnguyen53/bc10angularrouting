@@ -15,7 +15,7 @@ export class AuthComponent implements OnInit {
   }
 
   login(user:any){
-    this.data.loginUser(user).subscribe((result:any)=>{
+    this.data.post('QuanLyNguoiDung/DangNhap', user).subscribe((result:any)=>{
       if(result.maLoaiNguoiDung === "GV"){
         //Luu trang thai login
         localStorage.setItem("UserAdmin", JSON.stringify(result));
