@@ -69,5 +69,8 @@ link repo: https://github.com/dpnguyen53/bc10angularrouting
 - Pipes
 - Lifecycle
 
-
+======= Buoi 8 =======
 - BehaviorSubject
+- Sharing Modules
+- Angular Material
+- Alias

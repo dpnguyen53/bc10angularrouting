@@ -5,17 +5,21 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { ChildHomeComponent } from './child-home/child-home.component';
 import { FormsModule } from '@angular/forms';
+import { ShareModuleModule } from 'src/app/_core/share/share-module/share-module.module';
+import { MaterialModule } from 'src/app/_core/share/material-module';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ChildHomeComponent
+    ChildHomeComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    ShareModuleModule,
+    MaterialModule
   ]
 })
 export class HomeModule { }
